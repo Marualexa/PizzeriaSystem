@@ -39,4 +39,18 @@ public class PizzaEntity  extends AuditableEntity implements Serializable {
 
     @Column(columnDefinition = "TINYINT", nullable = false)
     private Boolean available;
+
+    @Override
+    public String toString() {
+        return "PizzaEntity{" +
+                "idPizza=" + idPizza +
+                
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                ", vegetarian=" + vegetarian +
+                ", vegan=" + vegan +
+                ", available=" + available +
+                '}';
+    }
 }
